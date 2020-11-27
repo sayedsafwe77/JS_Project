@@ -128,33 +128,26 @@ header.heads .slider .right, header.heads .slider .right p {
 
 /* end header */
 
-/* start section1 */
+/* start section item */
 
-.section1 {
-    margin: 59px 0 59px 0;
-    padding: 0px 0px 0 230px;
+#item{
+    padding: 70px 0px 75px 24px;
+
 }
-
-.section1 img {
+img {
     width: 350px;
     height: 350px;
-    margin: 54px 0 54px 0;
+    /* margin: 54px 0 54px 0; */
   
 }
 
-
-.section1 .paragraph {
-    padding: 53px 0px 0px 112px;
-    text-align: justify;
-    color: #433c3c;
-    font-size: 13pt;
-    font-family: cursive;
-    line-height: 1.5;
-   
-
+.paragraph{
+    padding-top: 80px;
 }
 
-/* end section1 */
+
+
+/* end section item */
 
 /* Start Footer */
 
