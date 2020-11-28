@@ -1,7 +1,7 @@
 var loginForm = document.getElementById("login");  
 var registerForm = document.getElementById("register");  
 var btnSwitch = document.getElementById("btn");
-var btnCart = document.getElementById("btnCart");
+
 
         
         function register(){
@@ -89,6 +89,7 @@ function validateRegister() {
 }
 
 document.getElementById("btnLogin").onclick = function (event) {
+    event.preventDefault();
     if (validateLogin()) {
             if (loginLegal()) {
             currUserArr = [];
@@ -102,14 +103,15 @@ document.getElementById("btnLogin").onclick = function (event) {
 
                         currUserArr.push(userObject);
                         localStorage.setItem("currUser", JSON.stringify(currUserArr));
-                        location.reload();
-                }
                 };
 
+
         }
-    
-    } 
-  };
+        window.location.href = ("books.html");
+        } 
+  }
+
+};
 
 function validateLogin() {
     let validateLoginFlag = true;
@@ -165,10 +167,6 @@ function uniqueID() {
   
     return unique;
   }
-  
-
-
-
 
 
 // document.getElementById("btnReset").onclick = function () {
