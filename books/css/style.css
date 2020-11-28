@@ -24,6 +24,10 @@ body {
   padding: 10px;
 }
 
+/* cart info  */
+#errorMsg{
+  display: none;
+}
 
 /* Login & Register */
 *

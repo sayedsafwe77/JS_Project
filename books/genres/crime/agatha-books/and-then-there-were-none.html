@@ -86,7 +86,7 @@
             <div class="col-md-6">
               <div id="slider" class="owl-carousel product-slider">
                 <div class="item">
-                  <img
+                  <img id="productImage"
                     src="../../../images/book-slider/murder-on-the-oriente.png"
                   />
                 </div>
@@ -152,10 +152,10 @@
             <div class="col-md-6">
               <div class="product-dtl">
                 <div class="product-info">
-                  <div class="product-name">Murder On The Orient Express</div>
+                  <div class="product-name"><label id="productName">And Then There Were None</label></div>
 
                   <div class="product-price-discount">
-                    <span>$39.00</span><span class="line-through">$29.00</span>
+                    <span id="productPrice">$5.00</span><span class="line-through">$15.00</span>
                   </div>
                 </div>
                 <p>
@@ -174,12 +174,19 @@
                     <div class="qtyplus">+</div>
                   </form>
                   <br />
-                  <a href="#" class="round-black-btn">Add to Cart</a
-                  ><a href="#" class="round-white-btn">Favorite</a>
+                  <button id="btnCart" class="round-black-btn">Add to Cart</button>
+                  <button id="btnFav" class="round-white-btn">Favorite</button> 
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div style="position: relative; display: block;"><img id="imgCart" onclick="window.location.href='../../../cart.html'"
+            src="../../../images/icons/cart.png" style="width: 70px; height: 70px;"><div>
+
+
+            
           <div class="product-info-tabs">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
@@ -324,6 +331,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../../aos.js"></script>
+  <script src="../../cart.js"></script>
   <script src="murder-on-the-orient-express.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
