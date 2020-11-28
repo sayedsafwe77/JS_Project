@@ -19,7 +19,7 @@ body {
   background-color: rgba(223, 228, 234, 1);
   background-size: cover;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
   line-height: 1.6;
   padding: 10px;
@@ -98,7 +98,7 @@ header {
   margin-bottom: 5px;
   margin-left: 10px;
   opacity: 0.8;
-  width: 80px;
+  width: 150px;
   height: 80px;
   display: flex;
   align-items: center;
