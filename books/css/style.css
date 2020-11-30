@@ -24,6 +24,36 @@ body {
   padding: 10px;
 }
 
+/* error messages */
+
+.error-message {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.error-message {
+  display: none;
+}
+
+.errorDiv{
+  margin-bottom: 30px;;
+}
+
+/* login success */
+.register-success
+{
+  color: #2e9605;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.register-success {
+  display: none;
+}
+
 /* cart info  */
 #errorMsg{
   display: none;
@@ -50,7 +80,7 @@ body {
 .form-box
 {
     width: 380px;
-    height: 520px;
+    height: 550px;
     position: relative;
     margin: 5% auto;
     background: white;
@@ -108,7 +138,7 @@ body {
 
 .input-group
 {
-    top: 180px;
+    top: 200px;
     position: absolute;
     width: 280px;
     transition: 1.4s;

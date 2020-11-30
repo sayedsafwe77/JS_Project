@@ -1,10 +1,8 @@
-  
 var productName = document.getElementById("productName");
 var prosuctPrice = document.getElementById("productPrice");
 var productImage = document.getElementById("productImage");
 
   var userCart = [];
-  var userFav = [];
 
   document.getElementById("btnCart").onclick= function(event) {
 
@@ -57,24 +55,4 @@ var productImage = document.getElementById("productImage");
 
   return exist;
   }
-
-  
-  document.getElementById("btnFav").onclick= function() {
-    var currentUser = JSON.parse(localStorage.getItem("currUser"));
-
-
-    var favObject = {
-        "User Email": currentUser[0]["Email"],
-        "Product Name": productName.innerText,
-        "Product Price": productPrice.innerText,
-        "Product Image": productImage.value,
-
-    }
-
-    userFav.push(favObject);
-    localStorage.setItem("userFavList", JSON.stringify(userFav));
-
-  };
-
-
 

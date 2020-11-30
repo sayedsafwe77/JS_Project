@@ -45,7 +45,7 @@ var productImage = document.getElementById("productImage");
         console.log(productName.innerText);
 
 
-        alert("You have already added this item to cart");
+        alert("You have already added this item to favorites");
         exist = false;
         break;
       }
