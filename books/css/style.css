@@ -24,6 +24,8 @@ body {
   padding: 10px;
 }
 
+
+
 /* error messages */
 
 .error-message {
@@ -192,6 +194,14 @@ body {
 .acceptTerms
 {
     margin: 30px 10px 30px 0;
+}
+
+
+/* table reviews  */
+
+.table-review{
+margin-top : 50px;
+margin-bottom: 50px;
 }
 
 

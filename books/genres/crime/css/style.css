@@ -30,10 +30,36 @@ body {
 
 
 
+.form-comment{
+  width: 800px;
+}
+
+.comment-section{
+  width: 100%;
+}
+
+
+table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;;
+}
+th, td {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 /* Header  */
 
+#errorMsg{
+  display: none;
+  margin-bottom: 30px;
+}
 
+#infoTable{
+  display: none;
 
+}
 
 header {
   text-align: center;

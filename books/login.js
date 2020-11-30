@@ -70,6 +70,7 @@ document.getElementById("btnRegister").onclick = function (event) {
       txtFullName.value ="";
       txtEmail.value ="";
       txtPassword.value = "";
+      termsChecked.checked = false;
       
     }
   }
