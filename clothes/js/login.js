@@ -107,7 +107,7 @@ document.getElementById("btnLogin").onclick = function (event) {
 
 
         }
-        window.location.href = ("books.html");
+        window.location.href = ("clothes-section.html");
         } 
   }
 
