@@ -53,30 +53,41 @@
   <body>
     <form class="form form-agatha">
       <header>
-        <!-- logo -->
-        <a href="#"
-          ><img
-            id="logo"
-            src="../../../images/test-logo.png"
-            style="float: left"
-        /></a>
-        <section class="wrapper">
-          <div class="navigation-bar">
-            <!-- menu -->
 
+        <!-- logo -->
+        <a href="#"><img id="logo" src="../../../images/shopify.png" style="float: left;"></a>
+        <section class="wrapper">
+  
+          <div class="navigation-bar">
+  
+            <!-- menu -->
+  
             <ul>
+  
               <li><a href="#">Home</a></li>
               <li><a href="#champs">Electonics</a></li>
               <li><a href="#iPromise">Clothes</a></li>
               <li><a href="#foundation">Make Up</a></li>
-              <li><a href="#foundation">Books</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#about">Get In Touch</a></li>
+  
+              <li style="font-size: 25px;"><a href="../../../login-register.html">Login</a></li>
+              <li  style="margin-top: 13px;"><label> | </label> </li>
+              <li style="font-size: 25px;"><a href="../../../login-register.html">Register</a></li>
+  
+              
+              <div style="position: relative; display: inline-block; margin-left: 100px;"><img id="imgCart" onclick="window.location.href='../../../cart.html'"
+                src="../../../images/icons/cart.png" style="width: 70px; height: 70px;"></div>
+    
+                  <div style="position: relative; display: inline-block; margin-left: 10px"><img id="imgFav" onclick="window.location.href='../../../favorites.html'"
+                    src="../../../images/icons/fav-icon.png" style="width: 70px; height: 70px;"></div>
+
+                    
             </ul>
+  
           </div>
         </section>
       </header>
-
       <div class="pd-wrap">
         <div class="container">
           <div class="heading-section">
@@ -86,7 +97,7 @@
             <div class="col-md-6">
               <div id="slider" class="owl-carousel product-slider">
                 <div class="item">
-                  <img
+                  <img id="productImage"
                     src="../../../images/book-slider/murder-on-the-oriente.png"
                   />
                 </div>
@@ -152,10 +163,10 @@
             <div class="col-md-6">
               <div class="product-dtl">
                 <div class="product-info">
-                  <div class="product-name">Murder On The Orient Express</div>
+                  <div class="product-name"><label id="productName">Murder On The Orient Express<label></div>
 
                   <div class="product-price-discount">
-                    <span>$39.00</span><span class="line-through">$29.00</span>
+                    <span id="productPrice">$39.00</span><span class="line-through">$29.00</span>
                   </div>
                 </div>
                 <p>
@@ -174,102 +185,101 @@
                     <div class="qtyplus">+</div>
                   </form>
                   <br />
-                  <a href="#" class="round-black-btn">Add to Cart</a
-                  ><a href="#" class="round-white-btn">Favorite</a>
+                  <button id="btnCart" class="round-black-btn">Add to Cart</button>
+                  <button id="btnFav" class="round-white-btn">Favorite</button> 
                 </div>
               </div>
             </div>
           </div>
-          <div class="product-info-tabs">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="description-tab"
-                  data-toggle="tab"
-                  href="#description"
-                  role="tab"
-                  aria-controls="description"
-                  aria-selected="true"
-                  >Description</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="review-tab"
-                  data-toggle="tab"
-                  href="#review"
-                  role="tab"
-                  aria-controls="review"
-                  aria-selected="false"
-                  >Reviews (0)</a
-                >
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="description"
-                role="tabpanel"
-                aria-labelledby="description-tab"
-              >
-                Just after midnight, a snowdrift stops the Orient Express in its
-                tracks. The luxurious train is surprisingly full for the time of
-                the year, but by the morning it is one passenger fewer. An
-                American tycoon lies dead in his compartment, stabbed a dozen
-                times, his door locked from the inside. Isolated and with a
-                killer in their midst, detective Hercule Poirot must identify
-                the murderer—in case he or she decides to strike again.
-              </div>
-              <div
-                class="tab-pane fade"
-                id="review"
-                role="tabpanel"
-                aria-labelledby="review-tab"
-              >
-                <div class="review-heading">REVIEWS</div>
-                <p class="mb-20">There are no reviews yet.</p>
-                <form class="review-form">
-                  <div class="form-group">
-                    <div class="reviews-counter">
-                      <div class="rate"></div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label>Your message</label>
-                    <textarea class="form-control" rows="10"></textarea>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name=""
-                          class="form-control"
-                          placeholder="Name*"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name=""
-                          class="form-control"
-                          placeholder="Email Id*"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <button class="round-black-btn">Submit Review</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+
+                  <div class="product-info-tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          id="description-tab"
+                          data-toggle="tab"
+                          href="#description"
+                          role="tab"
+                          aria-controls="description"
+                          aria-selected="true"
+                          >Description</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          id="review-tab"
+                          data-toggle="tab"
+                          href="#review"
+                          role="tab"
+                          aria-controls="review"
+                          aria-selected="false"
+                          >Reviews</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="description"
+                        role="tabpanel"
+                        aria-labelledby="description-tab"
+                      >
+                        Just after midnight, a snowdrift stops the Orient Express in its
+                        tracks. The luxurious train is surprisingly full for the time of
+                        the year, but by the morning it is one passenger fewer. An
+                        American tycoon lies dead in his compartment, stabbed a dozen
+                        times, his door locked from the inside. Isolated and with a
+                        killer in their midst, detective Hercule Poirot must identify
+                        the murderer—in case he or she decides to strike again.
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="review"
+                        role="tabpanel"
+                        aria-labelledby="review-tab"
+                      >
+
+                              
+
+                        <div class="review-heading">REVIEWS</div>
+                        <form class="review-form">
+                          <div class="form-group">
+                          
+                          </div>
+                          <label id="errorMsg">No items to display</label>
+                          <div class="reviews-counter">
+                            <div class="rate"></div>
+                          </div>
+                          <div class="table-review">
+                <table id="infoTable">
+                  <tr>
+                    <th>Name</th>
+                    <th>Review</th>
+                    </tr>
+                  <tbody id="infoTableBody"></tbody>
+                </table>
+    
+              </div>
+    
+                          <div class="form-comment">
+                            <label>Your message</label>
+                            <textarea class="comment-section" rows="10" id="comment"></textarea>
+                          </div>
+   
+                              </div>
+                            </div>
+                          </div>
+                          <button class="round-black-btn" id="submitreview">Submit Review</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
       <!-- Footer  -->
 
       <!-- 
@@ -324,6 +334,9 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../../aos.js"></script>
+  <script src="../../cart.js"></script>
+  <script src="../../../review.js"></script>
+  <script src="../../favorite.js"></script>
   <script src="murder-on-the-orient-express.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
