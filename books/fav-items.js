@@ -1,3 +1,18 @@
+window.addEventListener('load',function () {
+
+    if(!JSON.parse(localStorage.getItem("currUser"))){
+
+        alert("Please Login to view your Favorite List");
+            window.location.href = "login-register.html";
+
+
+    }
+
+});
+
+
+
+
 var favTable = document.getElementById("favTable");
 var favTableBody = document.getElementById("tBody");
 
