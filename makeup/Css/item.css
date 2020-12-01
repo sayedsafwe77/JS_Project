@@ -1,0 +1,189 @@
+.container-lg {
+    max-width: 1390px !important;
+}
+
+.container {
+    padding: 34px 0 35px 0px
+}
+
+/* start header */
+
+header.heads .upper {
+    background: #FFFFFF;
+}
+
+header.heads .upper p {
+    padding: 9px 0px 0px 135px;
+    margin: 10px;
+    color: #c0b9b9;
+}
+
+header.heads .upper .lower {
+    margin: -19px 0 -4px 0;
+}
+
+header.heads .lower span {
+    font-size: -webkit-xxx-large;
+    font-style: italic;
+    font-weight: bolder;
+    color: #000;
+}
+
+header.heads .lower .form {
+    width: -webkit-fill-available;
+    margin: 18px -112px 7px -72px;
+    padding: 12px 0px 8px 37px;
+    border: 3px solid #EB8092;
+}
+
+header.heads .lower .form label {
+    padding-right: 240px;
+    padding-bottom: 4px;
+    color: #aba3a3;
+}
+
+header.heads .lower .form button {
+    width: 108px;
+    height: 38px;
+    font-size: 13pt;
+    font-weight: bold;
+    font-family: emoji;
+    color: #fff;
+    background-color: #EB8092;
+    border: none;
+}
+
+header.heads .lower .right {
+    padding: 31px 0 0 180px;
+}
+
+header.heads .lower .right i:hover, header.heads .lower span:hover {
+    color: rgb(225, 236, 236);
+}
+
+header.heads .navb {
+    margin: 0;
+    background-color: #EB8092;
+}
+
+header.heads .navb ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 19px;
+}
+
+header.heads .navb ul li {
+    display: inline;
+    margin: 10px;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+header.heads .navb ul li:hover {
+    color: rgb(122, 101, 101);
+}
+
+header.heads .slider {
+    background-color: #000;
+    height: 500px;
+}
+
+header.heads .slider img {
+    background-size: contain;
+    width: 718px;
+    margin-left: 110px;
+}
+
+header.heads .slider .right {
+    position: absolute;
+    top: 260px;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    color: #B0B0B0;
+    font-size: xx-large;
+}
+
+header.heads .slider .right p {
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+}
+
+header.heads .slider .right, header.heads .slider .right p {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {
+        color: #B0B0B0;
+    }
+    to {
+        color: rgb(29, 27, 27);
+    }
+}
+
+/* end header */
+
+/* start section item */
+
+#item{
+    padding: 70px 0px 75px 24px;
+
+}
+img {
+    width: 350px;
+    height: 350px;
+    /* margin: 54px 0 54px 0; */
+  
+}
+
+.paragraph{
+    padding-top: 80px;
+}
+
+
+
+/* end section item */
+
+/* Start Footer */
+
+.footer {
+    padding: 30px 50px 30px 50px;
+    background-color: rgb(218, 214, 214);
+    color: #6A6E71;
+    overflow: hidden;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    float: right;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer ul li i:hover {
+    color: #fff;
+}
+
+/* End Footer */
+
+/* strart my framework */
+
+a ,a:hover {
+    text-decoration: none;
+    color: #433c3c;
+}
+
+/* end my framework */
+
+/* start page categories */
+
+/* end page categories */
