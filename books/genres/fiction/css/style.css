@@ -4,6 +4,44 @@
   box-sizing: border-box;
 }
 
+
+input[type=button] {
+  position: relative;
+  background-color: #467780;
+  border: none;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+input[type=button]:hover{
+ background:#fff;
+ box-shadow:0px 2px 10px 5px #97B1BF;
+ color:#000;
+}
+
+input[type=button]:after {
+  content: "";
+  background: #f1c40f;
+  display: inline-block;
+  position: relative;
+  margin-left: -20px !important;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+input[type=button]:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
 body {
   background-color: rgba(241, 242, 246, 1);
   padding: 5%;
@@ -26,6 +64,39 @@ body {
 
 .form-agatha {
   margin-left: 200px;
+}
+
+
+
+.form-comment{
+  width: 800px;
+}
+
+.comment-section{
+  width: 100%;
+}
+
+
+table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;;
+}
+th, td {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Header  */
+
+#errorMsg{
+  display: none;
+  margin-bottom: 30px;
+}
+
+#infoTable{
+  display: none;
+
 }
 
 header {
@@ -111,7 +182,7 @@ header {
   color: white;
 }
 
-/* description section */
+/* product details section */
 .row {
   position: relative;
   margin-bottom: 100px;
@@ -315,6 +386,7 @@ header {
   margin-top: 20px;
   border: solid 2px #212529;
   transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
 }
 .round-black-btn:hover,
 .round-black-btn:focus {
@@ -333,12 +405,16 @@ header {
   margin-left: 10px;
   border: solid 2px #fff;
   transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+
 }
 .round-white-btn:hover,
 .round-white-btn:focus {
   background: transparent;
-  color: #212529;
+  color: white;
   text-decoration: none;
+  background: #212529;
+
 }
 
 .product-info-tabs {
