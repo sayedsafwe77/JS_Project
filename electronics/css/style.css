@@ -63,11 +63,12 @@ small {
 }
 .search{
     width: 200px;
-    margin: 20px;
+    margin: 10px;
     margin-top: 40px;
     border-radius: 5px;
     border: 1px solid #02b8dd ;
     height: 20px;
+    transform: translateX(-350px);
 }
 .wrapper {
     margin: 0 auto;
@@ -75,7 +76,8 @@ small {
     width: 940px;
 }
 header {
-    height: 120px;
+    max-height: 120px;
+    margin-bottom: 40px;
 }
 header h1 {
     float: left;
@@ -90,7 +92,8 @@ header nav {
 header nav ul li {
     float: left;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 10px;
+    transform: translateY(-80px);
 }
 header nav ul li a {
     color: #444;

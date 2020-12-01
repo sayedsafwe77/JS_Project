@@ -4,12 +4,14 @@ body {
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   } 
 header {
-    height: 120px;
-  }
+    max-height: 120px;
+    margin-bottom: 40px;
+}
   header h1 {
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
+    transform: translateX(-80px);
   }
   header h1 .color {
     color: #02b8dd;
@@ -17,10 +19,21 @@ header {
   header nav {
     float: right;
   }
-  header nav ul li {
-    display: inline-block;
+  .search{
+    width: 200px;
+    margin: 10px;
     margin-top: 40px;
-  }
+    border-radius: 5px;
+    border: 1px solid #02b8dd ;
+    height: 20px;
+    transform: translateX(-350px);
+}
+  header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 10px;
+    transform: translateY(-60px);
+}
   
   .log{
     position: absolute;
@@ -45,7 +58,7 @@ header {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    border-radius: 0 0 50% 50% / 60%;
+    border-radius: 0 0 50% 50% / 30%;
   } 
    header {
     width: 100%;
@@ -76,9 +89,9 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     padding: 14px 16px;
-    padding-right: 10px;
+    padding-right: 5px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 5px;
   }
   footer {
     text-align: center;
