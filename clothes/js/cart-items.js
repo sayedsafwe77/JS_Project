@@ -1,3 +1,17 @@
+
+window.addEventListener('load',function () {
+
+    if(!JSON.parse(localStorage.getItem("currUser"))){
+
+        alert("Please Login to view your Cart List");
+            window.location.href = "./../login-register.html";
+
+
+    }
+
+});
+
+
 var cartTable = document.getElementById("cartTable");
 var cartTableBody = document.getElementById("tBody");
 
