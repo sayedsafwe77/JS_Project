@@ -95,3 +95,24 @@ header li:nth-of-type(7) a:hover, header li:nth-of-type(8) a:hover{
     text-decoration: none;
     background-color: black;
 }
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;;
+  }
+  th, td {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  /* Header  */
+  
+  #errorMsg{
+    display: none;
+    margin-bottom: 30px;
+  }
+  
+  #infoTable{
+    display: none;
+  
+  }

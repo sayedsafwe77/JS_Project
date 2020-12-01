@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Make Up</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/item.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/aos.css"/>
+
+</head>
+
+<body>
+
+
+    <!-- Start Header -->
+    <div class="container-lg">
+
+        <header class="heads">
+
+            <div class="upper">
+                <p>Welcome to our online store!</p>
+                <hr>
+
+
+
+                <div class="lower">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <span>ekommart</span>
+                            </div>
+                            <div class="col">
+                                <form class="form">
+                                    <i class="fa fa-search" aria-hidden="true" style="color:#EB8092 ;"></i>
+                                    <input type="hidden">
+                                    <label>search products</label>
+                                    <button type="button" class="btn btn-secondary ">Search</button> </form>
+                            </div>
+                            <div class="col">
+                                <div class="right">
+                                    <i class="fa fa-user-circle  fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-heart-o  fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navb">
+                    <ul>
+                        <li>Home</li>
+                        <li>Electronic</li>
+                        <li>Clothes</li>
+                        <li>Books</li>
+                        <li>Make Up</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- End Header -->
+
+        <!-- Start Login & Registration -->
+        <section class="container">
+            <div class="form">
+                <div class="form-box">
+                    <div class="fobtn-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><i class="fa fa-facebook-square fa-lg"></i></li>
+                            <li><i class="fa fa-twitter-square fa-lg"></i></li>
+                            <li><i class="fa fa-linkedin-square fa-lg"></i></li>
+                            <li><i class="fa fa-google-plus-square fa-lg"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="errorDiv">
+                        <div class="error-message" id="feildsRequiredError">Please enter all feilds</div>
+                        <div class="error-message" id="nameLengthError">Name can't be less than 3 characters</div>
+                        <div class="error-message" id="nameLettersError">Only characters, numbers and _ are allowed
+                        </div>
+                        <div class="error-message" id="nameSpacesError">Name starts with letter and only one space
+                            between words</div>
+                        <div class="error-message" id="emailPatternError">Please enter a valid email.
+                            example@example.com</div>
+                        <div class="error-message" id="passwordError">Password must be 8 characters or more</div>
+                        <div class="error-message" id="wrongEmailOrPasswordError">Wrong Email or Password</div>
+                        <div class="error-message" id="emptyEmailOrPasswordError">Please enter your email and password
+                        </div>
+                        <div class="error-message" id="emailExistsError">Email already exists, Please login or enter
+                            another email</div>
+                        <div class="error-message" id="acceptTermsError">Accept Terms to Register</div>
+                        <div class="register-success" id="registerSuccess">Registered Successfuly, Please Login <label
+                                style="cursor: pointer;" onclick="location.reload();">Here<label></div>
+
+
+                    </div>
+
+                    <div id="login" class="input-group">
+                        <input id="txtLoginEmail" type="text" class="datainput" placeholder="Your Email">
+                        <input id="txtLoginPassword" type="password" class="datainput" placeholder="Password">
+                        <div class="acceptTerms">
+                            <input type="checkbox" class="check">
+                            <span>Remember me</span>
+                        </div>
+                        <button type="submit" id="btnLogin" class="submit">Login</button>
+                    </div>
+                    <div id="register" class="input-group">
+                        <input id="txtFullName" type="text" class="datainput" placeholder="Name">
+                        <br><input id="txtEmail" type="text" class="datainput" placeholder="Email">
+                        <br><input id="txtPassword" type="password" class="datainput" placeholder="Password">
+                      <br>  <div class="acceptTerms">
+                            <input id="acceptChecked" type="checkbox" class="check">
+                            <span>Accept for Terms of Use</span>
+                        </div>
+                        <button type="submit" id="btnRegister" class="submit">Register</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- End Login & Registration -->
+
+        <!--Start Footer-->
+        <div class="footer">
+            <span class="fl-left">Copyright &copy; 2019 Amira Inc.</span>
+            <ul>
+                <li><i class="fa fa-facebook-square fa-lg"></i></li>
+                <li><i class="fa fa-twitter-square fa-lg"></i></li>
+                <li><i class="fa fa-linkedin-square fa-lg"></i></li>
+                <li><i class="fa fa-google-plus-square fa-lg"></i></li>
+            </ul>
+        </div>
+        <!--End Footer-->
+
+
+
+
+        <!-- java script -->
+        <script src="Js/jquery-3.5.1.min.js"></script>
+        <script src="Js/popper.min.js"></script>
+        <script src="Js/bootstrap.min.js"></script>
+        <script src="Js/main.js"></script>
+        <script src="Js/aos.js"></script>
+        <script src="login-register.js"></script>
+        <script src="login.js"></script>
+
+
+
+</html>
+
+</div>
+</body>
+<script>
+    AOS.init({
+        duration: 2000,
+    });
+</script>
+
+</html>

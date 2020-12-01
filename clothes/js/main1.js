@@ -26,3 +26,8 @@ var imagelogo = document.getElementById('logo').src ='images/logo1.png'
 //     return 'uniqueName' + (i + 1)
 // })
 
+// var slideshow = document.getElementById('slideshow')
+// var p = document.createElement('p')
+// var txt = document.createTextNode('hello')
+// p.appendChild(txt)
+// p.insertBefore(slideshow)
