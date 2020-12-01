@@ -4,16 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
 	<title>Login</title>
-
     <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="css/style1.css" />
     <style>
       header li a:last-of-type {
         padding: 14px 16px;
         padding-right: 10px;
-}
+        }
     </style>
   </head>
 
@@ -58,6 +57,23 @@
                 <img src="images/social/twitter.png" />
                 <img src="images/social/instgram.png" />
             </div>
+
+          <div class="errorDiv">
+            <div class="error-message" id="feildsRequiredError">Please enter all feilds</div>
+            <div class="error-message" id="nameLengthError">Name can't be less than 3 characters</div>
+            <div class="error-message" id="nameLettersError">Only characters, numbers and _ are allowed</div>
+            <div class="error-message" id="nameSpacesError">Name starts with letter and only one space between words</div>
+            <div class="error-message" id="emailPatternError">Please enter a valid email. example@example.com</div>
+            <div class="error-message" id="passwordError">Password must be 8 characters or more</div>
+            <div class="error-message" id="wrongEmailOrPasswordError">Wrong Email or Password</div>
+            <div class="error-message" id="emptyEmailOrPasswordError">Please enter your email and password</div>
+            <div class="error-message" id="emailExistsError">Email already exists, Please login or enter another email</div>
+            <div class="error-message" id="acceptTermsError">Accept Terms to Register</div>
+            <div class="register-success" id="registerSuccess">Registered Successfuly, Please Login <label style="cursor: pointer;" onclick="location.reload();">Here<label></div>
+
+            
+          </div>
+
             <div id="login" class="input-group">
                 <input id="txtLoginEmail" type="text" class="datainput" placeholder="Your Email">
                 <input id="txtLoginPassword" type="password" class="datainput" placeholder="Password">
@@ -72,7 +88,7 @@
                 <input id="txtEmail" type="text" class="datainput" placeholder="Email">
                 <input id="txtPassword" type="password" class="datainput" placeholder="Password">
                 <div class="acceptTerms">
-                  <input type="checkbox" class="check">
+                  <input id="acceptChecked" type="checkbox" class="check">
                   <span>Accept for Terms of Use</span>
                 </div>
                 <button type="submit" id="btnRegister" class="submit">Register</button>
