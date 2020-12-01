@@ -6,7 +6,7 @@ window.addEventListener('load',function () {
     if(JSON.parse(localStorage.getItem("currUser"))){
 
         alert("You Already Logged in");
-            window.location.href = "books.html";
+            window.location.href = "../home.html";
 
 
     }

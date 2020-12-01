@@ -1,0 +1,97 @@
+input{
+  padding: 1px;
+}
+
+.error-message {
+    color: #cc0033;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .error-message {
+    display: none;
+  }
+  
+  .errorDiv{
+    margin-bottom: 30px;;
+  }
+
+
+
+  .register-success {
+    display: none;
+  }
+
+
+  /* Login & Register */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.form
+{
+  background-color: rgba(223, 228, 234, 1);
+  background-size: cover;
+  display: inline-block;
+  width: 80%;
+  margin-top: 20px;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.form-box
+{
+    width: 380px;
+    height: 550px;
+    position: relative;
+    margin: 5% auto;
+    background: white;
+    padding: 5px;
+    border: 2.25px solid #2DBDE8;
+    overflow: hidden;
+}
+
+.fobtn-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 10px #0080A0;
+    border-radius: 25px;
+}
+
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #0070A5, #2DBDE8);
+    border-radius: 30px;
+    transition: 1.4s;
+}
+
+ul{
+    text-align: center;
+}
+li{
+    display: inline;
+}
+
+input{
+  display: block;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Books</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+</head>
+
+<body>
+  <form class="form">
+    <header>
+
+      <!-- logo -->
+      <a href="#"><img id="logo" src="images/icons/logo1.png" style="float: left;"></a>
+      <section class="wrapper">
+
+        <div class="navigation-bar">
+
+          <!-- menu -->
+
+          <ul>
+
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../electronics/electronics.html">Electonics</a></li>
+            <li><a href="../clothes/clothes-section.html">Clothes</a></li>
+            <li><a href="../makeup/makeup.html">Makeup</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Get In Touch</a></li>
+
+            <li style="font-size: 25px;"><a href="login-register.html">Login</a></li>
+            <li  style="margin-top: 13px;"><label> | </label> </li>
+            <li style="font-size: 25px;"><a href="login-register.html">Register</a></li>
+
+                        
+            <div style="position: relative; display: inline-block; margin-left: 100px;"><img id="imgCart" onclick="window.location.href='cart.html'"
+              src="images/icons/cart.png" style="width: 70px; height: 70px;"></div>
+  
+                <div style="position: relative; display: inline-block; margin-left: 10px"><img id="imgFav" onclick="window.location.href='favorites.html'"
+                  src="images/icons/fav-icon.png" style="width: 70px; height: 70px;"></div>
+
+                  
+
+          </ul>
+
+        </div>
+      </section>
+    </header>
+
+    <div class="userProfileIcon">
+
+      <img width="100%" height="100%" onclick="window.location.href = 'profile.html'" src="../books/images/icons/avatar.png"/>
+
+    </div>
+
+
+    <div id="slideshow">
+      <div class="slide-wrapper">
+
+        <!-- slide show content -->
+
+        <div class="slide">
+          <img src="images/Slider/image1.jpg" style="width:100%; height: 100%;">
+        </div>
+        <div class="slide">
+          <img src="images/Slider/image2.jpg" style="width:100%; height: 100%;">
+        </div>
+        <div class="slide">
+          <img src="images/Slider/image3.jpg" style="width:100%; height: 100%;">
+        </div>
+        <div class="slide">
+          <img src="images/Slider/image4.jpg" style="width:100%; height: 100%;">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Defining Moments  -->
+
+    <div data-aos="zoom-in" style="margin-top: 80px; margin-bottom: 20px;">
+      <h3 class="sub4">Books Genres</h3><br>
+      <h3 class="sub4">The 4 Most Popular Genres</h3>
+    </div>
+
+    
+    <div id="divBookType">
+        <div class="divCategoryImage" style=" display: inline-block;" data-aos="fade-right">
+          <img src="images/crime-logo.png" width="70%" height="100%"
+            style=" border: 2px solid rgb(153, 148, 148);">
+        </div>
+  
+        <div class="divDescription" style=" display: inline-block;" data-aos="zoom-in">
+          <p>The crime genre includes the broad selection of books on criminals and the court system, but the most common focus is investigations and sleuthing.
+            Mystery novels are usually placed into this category, although there is a separate division for "crime". Hard Case Crime is one example.
+          </p>
+        </div>
+
+        <div class="divReadMore" style=" display: inline-block;" data-aos="fade-left">
+            <input type="button" class="btnReadMore" value="Read More"
+            onclick="document.location.href = 'genres/crime.html'">
+          </div>
+      </div>
+
+
+      <div id="divBookType">
+        <div class="divCategoryImage" style=" display: inline-block;" data-aos="fade-right">
+          <img src="images/history-logo.jpg" width="70%" height="100%"
+            style=" border: 2px solid rgb(153, 148, 148);">
+        </div>
+  
+        <div class="divDescription" style=" display: inline-block;" data-aos="zoom-in">
+          <p>
+            History is the discovery, collection, organization, and presentation of information about past events. History can also mean the period of time after writing was invented.
+            It is a field of research which uses a narrative to examine and analyse the sequence of events, and it sometimes attempts to investigate objectively the patterns of cause and effect that determine events. 
+        </p>
+        </div>
+
+        <div class="divReadMore" style=" display: inline-block;" data-aos="fade-left">
+          <input type="button" class="btnReadMore" value="Read More"
+          onclick="document.location.href = 'genres/history.html'">
+        </div>
+      </div>
+
+
+      <div id="divBookType">
+        <div class="divCategoryImage" style=" display: inline-block;" data-aos="fade-right">
+          <img src="images/fiction-logo.png" width="70%" height="100%"
+            style=" border: 2px solid rgb(153, 148, 148);">
+        </div>
+  
+        <div class="divDescription" style=" display: inline-block;" data-aos="zoom-in">
+          <p>Fiction is the telling of stories which are not real. More specifically, fiction is an imaginative form of narrative, one of the four basic rhetorical modes.Works of fiction need not be entirely imaginary and may include real people, places, and events. Fiction may be either written or oral. Although not all fiction is necessarily artistic, fiction is largely perceived as a form of art or entertainment.
+          </p>
+        </div>
+
+        <div class="divReadMore" style=" display: inline-block;" data-aos="fade-left">
+          <input type="button" class="btnReadMore" value="Read More"
+          onclick="document.location.href = 'genres/fiction.html'">
+        </div>
+      </div>
+
+
+      <div id="divBookType">
+        <div class="divCategoryImage" style=" display: inline-block;" data-aos="fade-right">
+          <img src="images/comic-logo.jpg" width="70%" height="100%"
+            style=" border: 2px solid rgb(153, 148, 148);">
+        </div>
+  
+        <div class="divDescription" style=" display: inline-block;" data-aos="zoom-in">
+          <p>
+            A comic book or comicbook, also called comic magazine or simply comic, is a publication that consists of comic art in the form of sequential juxtaposed panels that represent individual scenes. Panels are often accompanied by brief descriptive prose and written narrative, usually dialog contained in word balloons emblematic of the comics art form.
+          </p>
+        </div>
+
+        <div class="divReadMore" style=" display: inline-block;" data-aos="fade-left">
+          <input type="button" class="btnReadMore" value="Read More"
+          onclick="document.location.href = 'genres/comic.html'">
+        </div>
+      </div>
+
+
+
+    <!-- Team members  -->
+    <div data-aos="zoom-in-up" style="margin-top: 80px; margin-bottom: 20px;">
+      <h3 class="sub2">Team Members</h3>
+    </div>
+
+    <div class="background">
+      <div class="container">
+        <div class="panel team-table">
+
+          <div class="team">
+            <img src="images/person.png" class="person-img">
+            <h2 class="team-header">Ahmed Maher</h2>
+            <ul class="team-title">
+              <li class="team-title-item">Books</li>
+              <li>
+                <img class="social-contact-icon" src="images/social/twitter.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/linkedin.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/instgram.png" width="24%" height="100%" />
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="team">
+            <img src="images/person.png" class="person-img">
+            <h2 class="team-header">Sayed Safwat</h2>
+            <ul class="team-title">
+              <li class="team-title-item">Electronics</li>
+              <li>
+                <img class="social-contact-icon" src="images/social/twitter.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/linkedin.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/instgram.png" width="24%" height="100%" />
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="team">
+            <img src="images/person.png" class="person-img">
+            <h2 class="team-header">Mirna Hammam</h2>
+            <ul class="team-title">
+              <li class="team-title-item">Clothes</li>
+              <li>
+                <img class="social-contact-icon" src="images/social/twitter.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/linkedin.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/instgram.png" width="24%" height="100%" />
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="team">
+            <img src="images/person.png" class="person-img">
+            <h2 class="team-header">Amira Reda</h2>
+            <ul class="team-title">
+              <li class="team-title-item">Makeup</li>
+              <li>
+                <img class="social-contact-icon" src="images/social/twitter.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/linkedin.png" width="24%" height="100%" />
+                <img class="social-contact-icon" src="images/social/instgram.png" width="24%" height="100%" />
+              </li>
+            </ul>
+          </div>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer  -->
+
+
+    <h1 id="about"></h1>
+    <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href=""><img src="images/social/fb.png" width="100%" height="100%" /></a>
+        <a href=""><img src="images/social/twitter.png" width="100%" height="100%" /></a>
+        <a href=""><img src="images/social/linkedin.png" width="100%" height="100%" /></a>
+        <a href=""><img src="images/social/instgram.png" width="100%" height="100%" /></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a class="link-1" href="#">Home</a>
+
+          <a href="#">Blog</a>
+
+          <a href="#">About</a>
+
+          <a href="#">Faq</a>
+
+          <a href="#">Contact</a>
+        </p>
+        <div class="footer-copy">
+          <p style="height:100%;">Books E-commerce &copy; Ahmed Maher Corporation 2020</p>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+  </form>
+
+</body>
+
+<!-- <script src="main.js"></script> -->
+<script src="aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 2000
+  });
+</script>
+
+</html>
