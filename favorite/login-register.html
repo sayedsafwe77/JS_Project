@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+	<title>Login</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+
+  </head>
+
+  <body>
+    <form class="form form-agatha" autocomplete="off">
+      <header>
+        <!-- logo -->
+        <a href="#"><img id="logo" src="logo.png" style="float: left;"></a>
+        <section class="wrapper">
+          <div class="navigation-bar">
+            <!-- menu -->
+
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#champs">Electonics</a></li>
+              <li><a href="#iPromise">Clothes</a></li>
+              <li><a href="#foundation">Make Up</a></li>
+              <li><a href="#foundation">Books</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#about">Get In Touch</a></li>
+            </ul>
+          </div>
+        </section>
+      </header>
+
+
+      <!-- Login and Regeister -->
+      <div class="form">
+        <div class="form-box">
+            <div class="fobtn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="facebook.jfif" />
+                <img src="insta.jfif" />
+                <img src="linkedIn.jfif" />
+            </div>
+
+          <div class="errorDiv">
+            <div class="error-message" id="feildsRequiredError">Please enter all feilds</div>
+            <div class="error-message" id="nameLengthError">Name can't be less than 3 characters</div>
+            <div class="error-message" id="nameLettersError">Only characters, numbers and _ are allowed</div>
+            <div class="error-message" id="nameSpacesError">Name starts with letter and only one space between words</div>
+            <div class="error-message" id="emailPatternError">Please enter a valid email. example@example.com</div>
+            <div class="error-message" id="passwordError">Password must be 8 characters or more</div>
+            <div class="error-message" id="wrongEmailOrPasswordError">Wrong Email or Password</div>
+            <div class="error-message" id="emptyEmailOrPasswordError">Please enter your email and password</div>
+            <div class="error-message" id="emailExistsError">Email already exists, Please login or enter another email</div>
+            <div class="error-message" id="acceptTermsError">Accept Terms to Register</div>
+            <div class="error-message" id="phoneNumberError">Enter phone number in this format xxx-xxxxxxx</div>
+            <div class="register-success" id="registerSuccess">Registered Successfuly, Please Login <label style="cursor: pointer;" onclick="location.reload();">Here<label></div>
+
+            
+          </div>
+
+            <div id="login" class="input-group">
+                <input id="txtLoginEmail" type="text" class="datainput" placeholder="Your Email">
+                <input id="txtLoginPassword" type="password" class="datainput" placeholder="Password">
+                <div class="acceptTerms">
+                <input type="checkbox" class="check">
+                <span>Remember me</span>
+              </div>
+                <button type="submit" id="btnLogin" class="submit">Login</button>
+            </div>
+            <div id="register" class="input-group">
+                <input id="txtFullName" type="text" class="datainput" placeholder="Name">
+                <input id="txtEmail" type="text" class="datainput" placeholder="Email">
+                <input id="txtPassword" type="password" class="datainput" placeholder="Password">
+                <div class="acceptTerms">
+                  <input id="acceptChecked" type="checkbox" class="check">
+                  <span>Accept for Terms of Use</span>
+                </div>
+                <button type="submit" id="btnRegister" class="submit">Register</button>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Footer  -->
+
+      <!-- 
+    <h1 id="about"></h1>
+    <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href=""><img src="../images/social/fb.png" width="100%" height="100%" /></a>
+        <a href=""><img src="../images/social/twitter.png" width="100%" height="100%" /></a>
+        <a href=""><img src="../images/social/linkedin.png" width="100%" height="100%" /></a>
+        <a href=""><img src="../images/social/instgram.png" width="100%" height="100%" /></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a class="link-1" href="#">Home</a>
+
+          <a href="#">Blog</a>
+
+          <a href="#">About</a>
+
+          <a href="#">Faq</a>
+
+          <a href="#">Contact</a>
+        </p>
+        <div class="footer-copy">
+          <p style="height:100%;">Books E-commerce &copy; Ahmed Maher Corporation 2020</p>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+ -->
+
+</form>
+
+  </body>
+
+  <!-- <script src="main.js"></script> -->
+
+  <script src="aos.js"></script>
+  <script src="login-register.js"></script>
+  <script src="login.js"></script>
+
+
+  <script>
+    AOS.init({
+      duration: 2000,
+    });
+  </script>
+</html>
