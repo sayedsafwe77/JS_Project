@@ -41,6 +41,12 @@ input[type=button]:active:after {
   transition: 0s
 }
 
+/* user-profile  */
+.userProfileIcon{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
 
 body {
   background-color: rgba(241, 242, 246, 1);
